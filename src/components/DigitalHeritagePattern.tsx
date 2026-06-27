@@ -29,8 +29,8 @@ export function PixelPhoenix({ className = "", color = "#E8C547", size = 16 }: P
       <rect x="6" y="2" width="4" height="2" fill={c} opacity="0.95" />
       <rect x="7" y="4" width="2" height="1" fill={c} opacity="0.8" />
       {/* 凤眼 */}
-      <rect x="7" y="3" width="1" height="1" fill={c === "#E8C547" ? "#8B2E2E" : "#1a1a1a"} opacity="0.9" />
-      <rect x="8" y="3" width="1" height="1" fill={c === "#E8C547" ? "#8B2E2E" : "#1a1a1a"} opacity="0.9" />
+      <rect x="7" y="3" width="1" height="1" fill={c === "#E8C547" ? "#AE2D2D" : "#1a1a1a"} opacity="0.9" />
+      <rect x="8" y="3" width="1" height="1" fill={c === "#E8C547" ? "#AE2D2D" : "#1a1a1a"} opacity="0.9" />
       {/* 凤身 */}
       <rect x="5" y="5" width="6" height="3" fill={c} opacity="0.7" />
       {/* 凤翼 — 展开 */}

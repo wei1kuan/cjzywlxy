@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { HuiwenBgTexture } from '@/components/HuiwenPattern';
 
 /**
  * TopBar — 顶部欢迎条（漆器红底 + 中国结暗纹）
@@ -20,7 +19,6 @@ export default function TopBar() {
   return (
     <div className="bg-heritage-cream text-sm">
       <div className="max-w-[1600px] mx-auto bg-heritage-primary text-white relative overflow-hidden">
-        <HuiwenBgTexture color="#E8C547" opacity={0.18} />
         <div className="px-4 flex items-center justify-between h-9 relative z-10">
         {/* 左侧：欢迎语 + 日期 */}
         <div className="flex items-center gap-2 min-w-0">

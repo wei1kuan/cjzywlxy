@@ -18,9 +18,9 @@ export const navItems: NavItem[] = [
     name: "学院概况",
     path: "/about",
     children: [
-      { id: 11, name: "学院简介", path: "/about#college-intro" },
-      { id: 12, name: "领导团队", path: "/about#leadership" },
-	      { id: 13, name: "师资团队", path: "/about#faculty" },
+      { id: 11, name: "学院简介", path: "/about/intro" },
+      { id: 12, name: "领导团队", path: "/about/leadership" },
+	      { id: 13, name: "师资团队", path: "/about/faculty" },
     ],
   },
   {
@@ -28,8 +28,8 @@ export const navItems: NavItem[] = [
     name: "党建工作",
     path: "/party",
     children: [
-      { id: 21, name: "总支概况", path: "/party#general-branch" },
-      { id: 22, name: "党建动态", path: "/party#party-dynamics" },
+      { id: 21, name: "总支概况", path: "/party/general" },
+      { id: 22, name: "党建动态", path: "/party/dynamics" },
     ],
   },
   {
@@ -51,9 +51,8 @@ export const navItems: NavItem[] = [
     name: "教学科研",
     path: "/teaching",
     children: [
-      { id: 41, name: "教学成果", path: "/teaching#teaching-achievements" },
-      { id: 42, name: "科研项目", path: "/teaching#research-projects" },
-      { id: 43, name: "学术交流", path: "/teaching#academic-exchanges" },
+      { id: 41, name: "教科研成果", path: "/teaching/achievements" },
+      { id: 43, name: "学术交流", path: "/teaching/exchanges" },
     ],
   },
   {
@@ -61,10 +60,10 @@ export const navItems: NavItem[] = [
     name: "产教融合",
     path: "/industry",
     children: [
-      { id: 51, name: "合作企业", path: "/industry#partner-companies" },
-      { id: 52, name: "合作项目", path: "/industry#cooperation-projects" },
-      { id: 53, name: "实习基地", path: "/industry#internship-bases" },
-      { id: 54, name: "创新创业", path: "/industry#innovation-entrepreneurship" },
+      { id: 51, name: "合作企业", path: "/industry/partners" },
+      { id: 52, name: "合作项目", path: "/industry/projects" },
+      { id: 53, name: "实习基地", path: "/industry/bases" },
+      { id: 54, name: "创新创业", path: "/industry/innovation" },
     ],
   },
   {
@@ -72,9 +71,9 @@ export const navItems: NavItem[] = [
     name: "学团工作",
     path: "/students",
     children: [
-      { id: 61, name: "学生活动", path: "/students#student-activities" },
-      { id: 62, name: "社团风采", path: "/students#club-showcase" },
-      { id: 63, name: "获奖荣誉", path: "/students#awards-honors" },
+      { id: 61, name: "学生活动", path: "/students/activities" },
+      { id: 62, name: "社团风采", path: "/students/clubs" },
+      { id: 63, name: "获奖荣誉", path: "/students/awards" },
     ],
   },
   {
@@ -82,16 +81,8 @@ export const navItems: NavItem[] = [
     name: "招生就业",
     path: "/admission",
     children: [
-      { id: 71, name: "招生动态", path: "/admission#admission-news" },
-      { id: 72, name: "就业信息", path: "/admission#employment-info" },
-    ],
-  },
-  {
-    id: 8,
-    name: "下载中心",
-    path: "/downloads",
-    children: [
-      { id: 81, name: "下载中心", path: "/downloads#form-downloads" },
+      { id: 71, name: "招生动态", path: "/admission/news" },
+      { id: 72, name: "就业信息", path: "/admission/employment" },
     ],
   },
 ];
@@ -103,7 +94,6 @@ export const footerLinks = [
   { id: 3, name: "教学科研", path: "/teaching" },
   { id: 4, name: "学生工作", path: "/students" },
   { id: 5, name: "校企合作", path: "/industry" },
-  { id: 6, name: "下载中心", path: "/downloads" },
 ];
 
 // 联系方式数据

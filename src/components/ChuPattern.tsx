@@ -139,19 +139,19 @@ export function LacquerDivider({ className = "" }: { className?: string }) {
 export function LacquerFrame({ children, className = "" }: { children: React.ReactNode; className?: string }) {
   return (
     <div className={`relative ${className}`}>
-      {/* 上边鎏金线 */}
-      <div className="absolute top-0 left-4 right-4 h-px bg-gradient-to-r from-transparent via-heritage-gold/70 to-transparent" />
-      {/* 下边鎏金线 */}
-      <div className="absolute bottom-0 left-4 right-4 h-px bg-gradient-to-r from-transparent via-heritage-gold/70 to-transparent" />
-      {/* 左边鎏金线 */}
-      <div className="absolute top-4 bottom-4 left-0 w-px bg-gradient-to-b from-transparent via-heritage-gold/70 to-transparent" />
-      {/* 右边鎏金线 */}
-      <div className="absolute top-4 bottom-4 right-0 w-px bg-gradient-to-b from-transparent via-heritage-gold/70 to-transparent" />
+      {/* 上边线 */}
+      <div className="absolute top-0 left-4 right-4 h-px bg-gradient-to-r from-transparent via-heritage-primary/70 to-transparent" />
+      {/* 下边线 */}
+      <div className="absolute bottom-0 left-4 right-4 h-px bg-gradient-to-r from-transparent via-heritage-primary/70 to-transparent" />
+      {/* 左边线 */}
+      <div className="absolute top-4 bottom-4 left-0 w-px bg-gradient-to-b from-transparent via-heritage-primary/70 to-transparent" />
+      {/* 右边线 */}
+      <div className="absolute top-4 bottom-4 right-0 w-px bg-gradient-to-b from-transparent via-heritage-primary/70 to-transparent" />
       {/* 四角菱形纹 */}
-      <DiamondCorner className="absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2" color="#E8C547" size={20} />
-      <DiamondCorner className="absolute top-0 right-0 translate-x-1/2 -translate-y-1/2" color="#E8C547" size={20} />
-      <DiamondCorner className="absolute bottom-0 left-0 -translate-x-1/2 translate-y-1/2" color="#E8C547" size={20} />
-      <DiamondCorner className="absolute bottom-0 right-0 translate-x-1/2 translate-y-1/2" color="#E8C547" size={20} />
+      <DiamondCorner className="absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2" color="#AE2D2D" size={20} />
+      <DiamondCorner className="absolute top-0 right-0 translate-x-1/2 -translate-y-1/2" color="#AE2D2D" size={20} />
+      <DiamondCorner className="absolute bottom-0 left-0 -translate-x-1/2 translate-y-1/2" color="#AE2D2D" size={20} />
+      <DiamondCorner className="absolute bottom-0 right-0 translate-x-1/2 translate-y-1/2" color="#AE2D2D" size={20} />
       {/* 内容 */}
       {children}
     </div>

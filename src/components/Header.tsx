@@ -32,9 +32,9 @@ export default function Header() {
             className="shrink-0"
           >
             <img
-              src="/cjxy-logo.png"
+              src={`${import.meta.env.BASE_URL}cjxy-logo.png`}
               alt="长江职业学院"
-              className="h-16 md:h-[78px] w-auto object-contain"
+              className="h-14 md:h-[66px] w-auto object-contain"
             />
           </a>
 
@@ -49,10 +49,10 @@ export default function Header() {
               </span>
             </div>
             <div className="hidden lg:block" style={{ width: '220px' }}>
-              <h2 className="text-2xl font-display font-bold text-heritage-primary text-justify" style={{ textAlignLast: 'justify', textJustify: 'inter-character' }}>
+              <h2 className="text-3xl font-bold text-heritage-primary" style={{ fontFamily: '"STXingkai", "华文行楷", "KaiTi", "楷体", serif', lineHeight: 1.1, marginLeft: '2px' }}>
                 文旅创意学院
               </h2>
-              <p className="text-[11px] font-display text-heritage-secondary/70 mt-1 text-justify" style={{ textAlignLast: 'justify', textJustify: 'inter-character' }}>
+              <p className="text-heritage-secondary/70 mt-0 text-justify" style={{ fontFamily: '"仿宋_GB2312", "FangSong_GB2312", "FangSong", "仿宋", serif', fontSize: '13px', letterSpacing: '1.5px', fontWeight: 700, lineHeight: 1.1, marginTop: '-1px' }}>
                 荆楚非遗传承与创新实践中心
               </p>
             </div>
@@ -65,7 +65,7 @@ export default function Header() {
           className="flex items-center shrink-0 rounded-full overflow-hidden shadow-sm hover:shadow-md transition-shadow"
           style={{
             width: '300px',
-            border: '1.5px solid rgba(139,46,46,0.25)',
+            border: '1.5px solid rgba(174,45,45,0.25)',
             background: 'rgba(245,240,235,0.6)',
           }}
         >

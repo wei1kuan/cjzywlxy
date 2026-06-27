@@ -59,7 +59,7 @@ export default function TabNewsLayout({ tabs, defaultTab }: TabNewsLayoutProps) 
               }`}
             >
               <span className={`w-2 h-2 rounded-full shrink-0 transition-colors ${
-                activeTab === tab.key ? 'bg-heritage-primary' : 'bg-heritage-gold/40'
+                activeTab === tab.key ? 'bg-heritage-primary' : 'bg-heritage-primary/40'
               }`} />
               {tab.label}
               <span className="ml-auto text-sm text-gray-400">
@@ -107,7 +107,7 @@ export default function TabNewsLayout({ tabs, defaultTab }: TabNewsLayoutProps) 
                         className="flex items-center gap-3 min-w-0 flex-1 group-hover:text-heritage-primary transition-colors"
                       >
                         {/* 金色圆点 */}
-                        <span className="w-2 h-2 rounded-full bg-heritage-gold/50 shrink-0 group-hover:bg-heritage-gold transition-colors" />
+                        <span className="w-2 h-2 rounded-full bg-heritage-primary/50 shrink-0 group-hover:bg-heritage-primary transition-colors" />
                         {/* 标题 */}
                         <span className="text-base text-gray-700 truncate group-hover:text-heritage-primary transition-colors">
                           {item.title}

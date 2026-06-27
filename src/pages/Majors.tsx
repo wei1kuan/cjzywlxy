@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 import SectionTitle from "@/components/SectionTitle";
-import { HuiwenBorder } from "@/components/HuiwenPattern";
 import { majorsData } from "@/data/mockData";
 import { ArrowRight } from "lucide-react";
 
@@ -32,8 +31,7 @@ export default function Majors() {
                 whileHover={{ y: -4 }}
                 className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 flex relative"
               >
-                <HuiwenBorder color="rgba(122, 42, 42, 0.3)" />
-                <div className="w-1/2 min-w-[200px] relative overflow-hidden flex-shrink-0 bg-gradient-to-br from-heritage-primary/40 via-heritage-secondary/30 to-heritage-gold/40">
+<div className="w-1/2 min-w-[200px] relative overflow-hidden flex-shrink-0 bg-gradient-to-br from-heritage-primary/40 via-heritage-secondary/30 to-heritage-gold/40">
                   <div className="absolute inset-0 bg-gradient-to-r from-heritage-primary/40 to-transparent" />
                 </div>
 

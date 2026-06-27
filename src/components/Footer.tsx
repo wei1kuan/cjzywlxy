@@ -1,6 +1,5 @@
 import { footerLinks, contactInfo } from "@/data/mockData";
 import { KnotCorner } from "@/components/KnotPattern";
-import { HuiwenBgTexture } from "@/components/HuiwenPattern";
 import { CloudThunderBand } from "@/components/ChuPattern";
 
 /**
@@ -9,9 +8,6 @@ import { CloudThunderBand } from "@/components/ChuPattern";
 export default function Footer() {
   return (
     <footer className="bg-heritage-primary text-white relative overflow-hidden">
-      {/* 中国结菱形网格暗纹 */}
-      <HuiwenBgTexture color="#E8C547" opacity={0.18} />
-
       {/* 四角如意结纹 */}
       <KnotCorner className="absolute top-0 left-0" color="#E8C547" size={48} />
       <KnotCorner className="absolute top-0 right-0 scale-x-[-1]" color="#E8C547" size={48} />
@@ -24,7 +20,7 @@ export default function Footer() {
       </div>
 
       <div className="max-w-[1600px] mx-auto px-4 py-12 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           {/* 品牌信息 */}
           <div>
             <div className="flex items-center gap-3 mb-4">
@@ -43,7 +39,7 @@ export default function Footer() {
 
           {/* 快速链接 */}
           <div>
-            <h3 className="text-heritage-gold font-bold text-lg mb-4">快速链接</h3>
+            <h3 className="text-white font-bold text-lg mb-4">快速链接</h3>
             <ul className="space-y-2">
               {footerLinks.map((link) => (
                 <li key={link.id}>
@@ -60,7 +56,7 @@ export default function Footer() {
 
           {/* 联系方式 */}
           <div>
-            <h3 className="text-heritage-gold font-bold text-lg mb-4">联系我们</h3>
+            <h3 className="text-white font-bold text-lg mb-4">联系我们</h3>
             <ul className="space-y-3">
               {contactInfo.map((info) => (
                 <li key={info.label} className="flex items-start gap-3 text-white/70 text-sm">
@@ -73,7 +69,7 @@ export default function Footer() {
 
           {/* 关注我们 */}
           <div>
-            <h3 className="text-heritage-gold font-bold text-lg mb-4">关注我们</h3>
+            <h3 className="text-white font-bold text-lg mb-4">关注我们</h3>
             <div className="w-32 h-32 bg-white/10 rounded-lg p-2 border border-heritage-gold/20">
               <div className="w-full h-full bg-white/20 flex items-center justify-center">
                 <span className="text-white/50 text-xs text-center">学院公众号</span>

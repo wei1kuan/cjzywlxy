@@ -11,7 +11,7 @@ interface LogoProps {
 
 export default function CollegeLogo({ className = "", size = 80, showText = true }: LogoProps) {
   const s = size;
-  const primary = "#8B2E2E";
+  const primary = "#AE2D2D";
   const gold = "#E8C547";
 
   return (

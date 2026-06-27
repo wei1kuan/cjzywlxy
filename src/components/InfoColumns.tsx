@@ -31,22 +31,23 @@ export default function InfoColumns() {
           {columns.map((col, colIndex) => (
             <motion.div
               key={col.title}
+              className="h-full"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: colIndex * 0.1 }}
               viewport={{ once: true }}
             >
               {/* 漆器镶边卡片 */}
-              <LacquerFrame className="bg-white rounded-lg p-4">
+              <LacquerFrame className="bg-white rounded-lg p-6 h-full flex flex-col">
                 {/* 标题栏 */}
-                <div className="flex items-center justify-between border-b-2 border-heritage-gold/40 pb-2 mb-3">
+                <div className="flex items-center justify-between border-b-2 border-heritage-primary/40 pb-2 mb-3">
                   <h3 className="flex items-center gap-2 text-xl font-display font-bold text-heritage-primary">
                     <span className="text-xl">{col.icon}</span>
                     {col.title}
                   </h3>
                   <Link
                     to={col.moreLink}
-                    className="text-sm text-heritage-gold hover:text-heritage-primary transition-colors shrink-0"
+                    className="text-sm text-heritage-primary hover:text-heritage-primary/70 transition-colors shrink-0"
                   >
                     更多 &gt;
                   </Link>
@@ -57,14 +58,14 @@ export default function InfoColumns() {
                   {col.data.map((item) => (
                     <li
                       key={item.id}
-                      className="flex items-center justify-between py-2.5 border-b border-heritage-gold/10 last:border-b-0 hover:bg-heritage-cream/60 transition-colors rounded px-1 group"
+                      className="flex items-center justify-between py-2.5 border-b border-heritage-primary/10 last:border-b-0 hover:bg-heritage-cream/60 transition-colors rounded px-1 group"
                     >
                       <Link
                         to={col.moreLink}
                         className="flex items-center gap-2 min-w-0 flex-1 group-hover:text-heritage-primary transition-colors"
                       >
-                        {/* 鎏金圆点 */}
-                        <span className="w-2 h-2 rounded-full bg-heritage-gold/60 shrink-0 group-hover:bg-heritage-gold transition-colors" />
+                        {/* 圆点 */}
+                        <span className="w-2 h-2 rounded-full bg-heritage-primary/60 shrink-0 group-hover:bg-heritage-primary transition-colors" />
                         <span className="text-base text-gray-700 truncate group-hover:text-heritage-primary transition-colors">
                           {item.title}
                         </span>

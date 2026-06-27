@@ -75,7 +75,7 @@ export default function Students() {
                       <div className="relative h-2 bg-gradient-to-r from-heritage-primary via-heritage-gold to-heritage-primary" />
                       <div className="p-6">
                         <div className="flex items-center gap-2 text-sm text-gray-400 mb-2">
-                          <span className="w-1 h-1 rounded-full bg-heritage-gold/60" />{item.date}
+                          <span className="w-1 h-1 rounded-full bg-heritage-primary/60" />{item.date}
                         </div>
                         <h4 className="text-lg font-display font-bold text-heritage-primary mb-2 line-clamp-2 group-hover:text-heritage-secondary transition-colors">{item.title}</h4>
                         <p className="text-base text-gray-500 leading-relaxed line-clamp-2">{item.summary}</p>
