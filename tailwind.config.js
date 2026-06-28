@@ -23,7 +23,7 @@ export default {
       fontFamily: {
         'display': ['Noto Serif SC', 'serif'],
         'body': ['Noto Sans SC', 'sans-serif'],
-        'chinese': ['MaoBiGuYun', 'Ma Shan Zheng', 'Long Cang', 'STXingkai', '华文行楷', 'cursive'],
+        'chinese': ['BaiGeTianXing', 'MaoBiGuYun', 'STXingkai', '华文行楷', 'cursive'],
       },
     },
   },
