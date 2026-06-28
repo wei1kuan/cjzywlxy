@@ -60,16 +60,22 @@ export default function InfoColumns() {
                       key={item.id}
                       className="flex items-center justify-between py-2.5 border-b border-heritage-primary/10 last:border-b-0 hover:bg-heritage-cream/60 transition-colors rounded px-1 group"
                     >
-                      <Link
-                        to={col.moreLink}
-                        className="flex items-center gap-2 min-w-0 flex-1 group-hover:text-heritage-primary transition-colors"
-                      >
-                        {/* 圆点 */}
-                        <span className="w-2 h-2 rounded-full bg-heritage-primary/60 shrink-0 group-hover:bg-heritage-primary transition-colors" />
-                        <span className="text-base text-gray-700 truncate group-hover:text-heritage-primary transition-colors">
-                          {item.title}
-                        </span>
-                      </Link>
+                      {(item as any).link ? (
+                        <a href={(item as any).link} target="_blank" rel="noopener noreferrer"
+                          className="flex items-center gap-2 min-w-0 flex-1 group-hover:text-heritage-primary transition-colors"
+                        >
+                          <span className="w-2 h-2 rounded-full bg-heritage-primary/60 shrink-0 group-hover:bg-heritage-primary transition-colors" />
+                          <span className="text-base text-gray-700 truncate group-hover:text-heritage-primary transition-colors">{item.title}</span>
+                        </a>
+                      ) : (
+                        <Link
+                          to={col.moreLink}
+                          className="flex items-center gap-2 min-w-0 flex-1 group-hover:text-heritage-primary transition-colors"
+                        >
+                          <span className="w-2 h-2 rounded-full bg-heritage-primary/60 shrink-0 group-hover:bg-heritage-primary transition-colors" />
+                          <span className="text-base text-gray-700 truncate group-hover:text-heritage-primary transition-colors">{item.title}</span>
+                        </Link>
+                      )}
                       <span className="text-sm text-gray-400 shrink-0 ml-2">
                         {item.date}
                       </span>

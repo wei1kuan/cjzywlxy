@@ -10,24 +10,14 @@ export default function AboutIntro() {
           <section className="mt-6">
             <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12 border border-heritage-primary/10 relative">
 <div className="max-w-4xl mx-auto">
-                <h3 className="text-2xl font-display font-bold text-heritage-primary mb-8 text-center">
-                  文旅创意学院（荆楚非遗传承与创新实践中心）简介
-                </h3>
-                <div className="space-y-8">
+<div className="space-y-8">
                   {/* 开篇 */}
                   <div className="text-gray-700 leading-loose text-base indent-8">
                     学校紧扣教育强省，文化强省建设总体任务，抢抓数字文旅融合创新发展时代趋势，依托湖北省高水平高职院校建设平台和荆楚非遗传承与创新实践中心特色载体，发挥光谷片区、武汉新城区位优势，践行专业集群协调发展、跨专业交叉融合育人建设路径，打造彰显荆楚文脉、赋能数字文旅的特色办学品牌。
                   </div>
 
                   {/* 图片占位符 */}
-                  <div className="relative aspect-[21/9] rounded-xl overflow-hidden bg-gradient-to-br from-heritage-primary/10 via-heritage-gold/10 to-heritage-primary/10 border-2 border-dashed border-heritage-primary/30 flex items-center justify-center">
-                    <div className="text-center">
-                      <span className="text-heritage-primary/40 text-5xl">🖼️</span>
-                      <p className="mt-2 text-heritage-primary/40 text-sm">学院风采 · 横向图片占位</p>
-                      <p className="text-heritage-primary/25 text-xs mt-1">宽高比 21:9</p>
-                    </div>
-                  </div>
-
+                  
                   {/* 集群聚力 */}
                   <div>
                     <h4 className="text-lg font-body font-bold text-heritage-primary mb-2 flex items-center gap-2">

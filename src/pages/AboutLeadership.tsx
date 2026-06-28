@@ -5,7 +5,7 @@ export default function AboutLeadership() {
     <div className="min-h-screen bg-heritage-cream">
       <main className="pt-20 pb-20">
         <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionTitle title="领导团队" subtitle="凝心聚力，引领发展" />
+          <SectionTitle title="学院领导" subtitle="凝心聚力，引领发展" />
           <div className="mt-8 bg-white rounded-xl shadow-sm border border-heritage-primary/10 p-8 md:p-10">
             <div className="space-y-6">
               {[

@@ -27,7 +27,7 @@ export default function Carousel() {
   }, []);
 
   return (
-    <div className="relative w-full h-[440px] md:h-[580px] overflow-hidden bg-gray-900">
+    <div className="relative w-full h-[280px] sm:h-[380px] md:h-[580px] overflow-hidden bg-gray-900">
       <AnimatePresence mode="wait">
         <motion.div
           key={currentIndex}
@@ -40,27 +40,27 @@ export default function Carousel() {
           <img
             src={slides[currentIndex].imageUrl}
             alt={slides[currentIndex].title}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover sm:object-cover"
             style={currentIndex === 0 ? { transform: 'scale(1.1)' } : undefined}
           />
           {/* Slide 0：非遗文化展示馆 — 左侧竖排 */}
           {currentIndex === 0 && (
-            <div className="absolute inset-y-0 left-0 flex items-center pl-6 md:pl-12">
+            <div className="absolute inset-y-0 left-0 flex items-center pl-3 sm:pl-6 md:pl-12">
               <motion.div
                 initial={{ x: -30, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="flex flex-col items-center gap-4"
+                className="flex flex-col items-center gap-2 sm:gap-4"
                 style={{ writingMode: 'vertical-rl' }}
               >
                 <h2
-                  className="text-3xl md:text-5xl font-chinese font-bold text-white tracking-[0.3em]"
+                  className="text-xl sm:text-2xl md:text-5xl font-chinese font-bold text-white tracking-[0.2em] sm:tracking-[0.3em]"
                   style={{ textShadow: '0 0 20px rgba(0,0,0,0.9), 2px 4px 6px rgba(0,0,0,0.8), 4px 8px 12px rgba(0,0,0,0.5)' }}
                 >
                   {slides[currentIndex].title}
                 </h2>
                 <p
-                  className="text-sm md:text-lg text-heritage-gold font-chinese tracking-[0.2em]"
+                  className="text-xs sm:text-sm md:text-lg text-heritage-gold font-chinese tracking-[0.15em] sm:tracking-[0.2em]"
                   style={{ textShadow: '0 0 12px rgba(0,0,0,0.8), 1px 2px 3px rgba(0,0,0,0.7), 2px 4px 6px rgba(0,0,0,0.4)' }}
                 >
                   {slides[currentIndex].subtitle}
@@ -71,20 +71,20 @@ export default function Carousel() {
 
           {/* Slide 1：叶画特色展厅 — 左上横排 */}
           {currentIndex === 1 && (
-            <div className="absolute top-0 left-0 pt-8 md:pt-12 pl-6 md:pl-12">
+            <div className="absolute top-0 left-0 pt-4 sm:pt-8 md:pt-12 pl-3 sm:pl-6 md:pl-12">
               <motion.div
                 initial={{ y: -20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
               >
                 <h2
-                  className="text-3xl md:text-5xl font-chinese font-bold text-white tracking-[0.15em]"
+                  className="text-xl sm:text-2xl md:text-5xl font-chinese font-bold text-white tracking-[0.1em] sm:tracking-[0.15em]"
                   style={{ textShadow: '0 0 20px rgba(0,0,0,0.9), 2px 4px 6px rgba(0,0,0,0.8), 4px 8px 12px rgba(0,0,0,0.5)' }}
                 >
                   {slides[currentIndex].title}
                 </h2>
                 <p
-                  className="mt-2 text-sm md:text-lg text-heritage-gold font-chinese tracking-[0.15em]"
+                  className="mt-1 sm:mt-2 text-xs sm:text-sm md:text-lg text-heritage-gold font-chinese tracking-[0.1em] sm:tracking-[0.15em]"
                   style={{ textShadow: '0 0 12px rgba(0,0,0,0.8), 1px 2px 3px rgba(0,0,0,0.7), 2px 4px 6px rgba(0,0,0,0.4)' }}
                 >
                   {slides[currentIndex].subtitle}
@@ -98,14 +98,14 @@ export default function Carousel() {
       {/* 左右切换 — 金色半透明 */}
       <button
         onClick={() => setCurrentIndex((prev) => (prev - 1 + slides.length) % slides.length)}
-        className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/20 hover:bg-white/40 hover:scale-110 backdrop-blur-sm rounded-full flex items-center justify-center text-white transition-all duration-300"
+        className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-orange-500/30 hover:bg-orange-500/50 hover:scale-110 backdrop-blur-sm rounded-full flex items-center justify-center text-white transition-all duration-300"
         aria-label="上一张"
       >
         <ChevronLeft className="w-5 h-5" />
       </button>
       <button
         onClick={() => setCurrentIndex((prev) => (prev + 1) % slides.length)}
-        className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/20 hover:bg-white/40 hover:scale-110 backdrop-blur-sm rounded-full flex items-center justify-center text-white transition-all duration-300"
+        className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-orange-500/30 hover:bg-orange-500/50 hover:scale-110 backdrop-blur-sm rounded-full flex items-center justify-center text-white transition-all duration-300"
         aria-label="下一张"
       >
         <ChevronRight className="w-5 h-5" />
@@ -119,8 +119,8 @@ export default function Carousel() {
             onClick={() => setCurrentIndex(index)}
             className={`rounded-full transition-all duration-300 hover:scale-125 ${
               index === currentIndex
-                ? 'bg-white w-6 h-2.5'
-                : 'bg-white/40 hover:bg-white/60 w-2.5 h-2.5'
+                ? 'bg-orange-500/60 w-14 h-2.5 rounded-full'
+                : 'bg-white hover:bg-white w-2.5 h-2.5 rounded-full'
             }`}
             aria-label={`切换到第 ${index + 1} 张`}
           />

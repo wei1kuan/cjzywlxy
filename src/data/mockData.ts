@@ -19,7 +19,7 @@ export const navItems: NavItem[] = [
     path: "/about",
     children: [
       { id: 11, name: "学院简介", path: "/about/intro" },
-      { id: 12, name: "领导团队", path: "/about/leadership" },
+      { id: 12, name: "学院领导", path: "/about/leadership" },
 	      { id: 13, name: "师资团队", path: "/about/faculty" },
     ],
   },
@@ -89,11 +89,11 @@ export const navItems: NavItem[] = [
 
 // 底部链接数据
 export const footerLinks = [
-  { id: 1, name: "学院概况", path: "/about" },
-  { id: 2, name: "专业设置", path: "/majors" },
-  { id: 3, name: "教学科研", path: "/teaching" },
-  { id: 4, name: "学生工作", path: "/students" },
-  { id: 5, name: "校企合作", path: "/industry" },
+  { id: 1, name: "湖北省教育厅", path: "https://jyt.hubei.gov.cn/" },
+  { id: 2, name: "湖北省文化和旅游厅", path: "https://wlt.hubei.gov.cn/" },
+  { id: 3, name: "中国高职高专教育网", path: "https://www.tech.net.cn/index.aspx" },
+  { id: 4, name: "湖北高职高专教育网", path: "https://www.hbve.net.cn/" },
+  { id: 5, name: "全国职业院校技能大赛官网", path: "http://www.nvsc.com.cn/" },
 ];
 
 // 联系方式数据
@@ -267,6 +267,7 @@ export interface NewsItem {
   title: string;
   date: string;
   summary: string;
+  link?: string;
 }
 
 // 项目数据类型
@@ -299,50 +300,34 @@ export const newsData: NewsItem[] = [
   },
 ];
 
-// 通知公告示例数据
+// 通知公告示例数据（来源：jgy.cjxy.edu.cn）
 export const noticeData: NewsItem[] = [
-  {
-    id: 1,
-    title: "2026年文旅创意学院招生简章正式发布",
-    date: "2026-07-05",
-    summary: "我院2026年招生计划已公布，共计划招收各类专业学生500余人，欢迎广大考生报考。",
-  },
-  {
-    id: 2,
-    title: "关于2026届毕业生离校手续办理的通知",
-    date: "2026-06-28",
-    summary: "2026届毕业生请于7月10日前完成离校手续办理，具体流程及所需材料请查看详情。",
-  },
-  {
-    id: 3,
-    title: "学院2025-2026学年第二学期期末考试安排",
-    date: "2026-06-20",
-    summary: "本学期期末考试将于7月15日至7月25日进行，请各位同学做好复习准备。",
-  },
-  {
-    id: 4,
-    title: "关于举办非遗技艺体验周活动的通知",
-    date: "2026-06-15",
-    summary: "学院将于7月8日至12日举办非遗技艺体验周，涵盖叶画、缠花、汉绣等特色项目。",
-  },
-  {
-    id: 5,
-    title: "2026年暑假放假及秋季学期开学安排",
-    date: "2026-06-10",
-    summary: "学生暑假自7月26日开始，秋季学期9月1日正式上课，请提前做好行程安排。",
-  },
-  {
-    id: 6,
-    title: "关于开展2026年大学生创新创业项目申报的通知",
-    date: "2026-06-05",
-    summary: "2026年度大学生创新创业训练计划项目申报工作已启动，截止日期为6月30日。",
-  },
-  {
-    id: 7,
-    title: "学院图书馆暑假开放时间调整通知",
-    date: "2026-05-28",
-    summary: "暑假期间图书馆开放时间调整为每周一、三、五上午9:00-下午4:00，请相互转告。",
-  },
+  { id: 1, title: "关于拟将洪秀慧等10名同志接收为中共预备党员的公示", date: "2026-06-22", summary: "在听取党员、群众意见的基础上，经支部委员会审查，拟将洪秀慧等10名同志吸收为中共预备党员。", link: "https://jgy.cjxy.edu.cn/info/1043/2302.htm" },
+  { id: 2, title: "城市建设学院2026-2027学年度第一学期教材选用情况公示", date: "2026-06-12", summary: "经审议确定了2026-2027学年度第一学期拟选用教材，现将相关情况公示。", link: "https://jgy.cjxy.edu.cn/info/1043/2299.htm" },
+  { id: 3, title: "2026年城市建设学院党总支\"两优一先\"评选拟推荐对象名单公示", date: "2026-06-08", summary: "由支部推荐，总支讨论，评选推荐先进基层党组织、优秀共产党员、优秀党务工作者。", link: "https://jgy.cjxy.edu.cn/info/1043/2294.htm" },
+  { id: 4, title: "关于拟将洪秀慧等10名同志接收为党员发展对象的公示", date: "2026-06-02", summary: "经支部委员会讨论、党总支研究同意洪秀慧等10名同志为发展对象人选。", link: "https://jgy.cjxy.edu.cn/info/1043/2291.htm" },
+  { id: 5, title: "城市建设学院党总支2026年上半年入党积极分子名单公示", date: "2026-05-08", summary: "经支部委员会研究、党总支审议，将王易轩等56名同志确定为入党积极分子。", link: "https://jgy.cjxy.edu.cn/info/1043/2282.htm" },
+  { id: 6, title: "关于城市建设学院关于2025年度教职工考核优秀评选结果的公示", date: "2025-12-24", summary: "经基层党支部推荐，全院教职工投票，由城市建设学院党总支审核评选结果。", link: "https://jgy.cjxy.edu.cn/info/1043/2273.htm" },
+];
+
+// 教学科研成果数据（来源：jgy.cjxy.edu.cn）
+export const teachingResearchHomeData: NewsItem[] = [
+  { id: 1, title: "城市建设学院2026-2027学年度第一学期教材选用情况公示", date: "2026-06-12", summary: "经审议确定了2026-2027学年度第一学期拟选用教材。", link: "https://jgy.cjxy.edu.cn/info/1029/2298.htm" },
+  { id: 2, title: "深化协同育人，共筑行业未来", date: "2025-11-03", summary: "澳华装饰与长江职业学院城市建设学院建筑装饰专业校企合作签约仪式顺利举行。", link: "https://jgy.cjxy.edu.cn/info/1029/2231.htm" },
+  { id: 3, title: "城市建设学院组织召开2025年湖北省自然科学基金项目中期推进会", date: "2025-09-30", summary: "围绕项目阶段性成果总结与后续研究部署展开深入交流，为项目高质量推进锚定方向。", link: "https://jgy.cjxy.edu.cn/info/1030/2196.htm" },
+  { id: 4, title: "校企合作结硕果 师承延续传帮带", date: "2025-09-16", summary: "校企合作成果丰硕，师承延续传帮带模式助力人才培养。", link: "https://jgy.cjxy.edu.cn/info/1029/2182.htm" },
+  { id: 5, title: "【长江云】从企业设计师到职教老师 他凭实战本领带徒争金夺银", date: "2025-09-10", summary: "从企业设计师到世界技能大赛\"中国教练\"，他凭实战本领带徒夺金又战疫。", link: "https://jgy.cjxy.edu.cn/info/1029/2186.htm" },
+  { id: 6, title: "【云上鄂州】荆楚好老师群星闪耀", date: "2025-08-26", summary: "从企业设计师到职教老师，他凭实战本领带徒争金夺银。", link: "https://jgy.cjxy.edu.cn/info/1029/2190.htm" },
+];
+
+// 党建工作数据（来源：jgy.cjxy.edu.cn）
+export const partyBuildingHomeData: NewsItem[] = [
+  { id: 1, title: "关于拟将洪秀慧等10名同志接收为中共预备党员的公示", date: "2026-06-22", summary: "在听取党员、群众意见的基础上，经支部委员会审查，拟将洪秀慧等10名同志吸收为中共预备党员。", link: "https://jgy.cjxy.edu.cn/info/1023/2301.htm" },
+  { id: 2, title: "2026年城市建设学院党总支\"两优一先\"评选拟推荐对象名单公示", date: "2026-06-08", summary: "由支部推荐，总支讨论，先进基层党组织：教工第一党支部。", link: "https://jgy.cjxy.edu.cn/info/1023/2295.htm" },
+  { id: 3, title: "关于拟将洪秀慧等10名同志接收为党员发展对象的公示", date: "2026-06-02", summary: "经支部委员会讨论、党总支研究同意洪秀慧等10名同志为发展对象人选。", link: "https://jgy.cjxy.edu.cn/info/1023/2292.htm" },
+  { id: 4, title: "关于进一步严肃党员干部经商办企业的纪律提醒", date: "2026-04-15", summary: "进一步严肃党员干部经商办企业的纪律要求。", link: "https://jgy.cjxy.edu.cn/info/1023/2277.htm" },
+  { id: 5, title: "关于2026年清明节廉洁安全工作的提示", date: "2026-04-03", summary: "关于2026年清明节期间廉洁安全工作的提示通知。", link: "https://jgy.cjxy.edu.cn/info/1023/2279.htm" },
+  { id: 6, title: "严肃党内政治生活 凝聚城建发展合力", date: "2026-03-17", summary: "城市建设学院党总支召开2025年度组织生活会，为学院高质量发展筑牢党建根基。", link: "https://jgy.cjxy.edu.cn/info/1023/2272.htm" },
 ];
 
 // 特色项目示例数据
