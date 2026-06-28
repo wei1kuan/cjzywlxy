@@ -43,17 +43,17 @@ export default function Header() {
 
           {/* 文旅创意学院 Logo 占位符 */}
           <div className="hidden sm:flex items-center gap-2 sm:gap-3 shrink-0">
-            <div className="w-[50px] h-[50px] sm:w-[60px] sm:h-[60px] md:w-[78px] md:h-[78px] border-2 border-dashed border-gray-300 rounded-lg flex items-center justify-center bg-gray-50 shrink-0">
-              <span className="text-gray-400 text-[10px] sm:text-xs text-center leading-tight">
-                文旅学院<br />Logo
-              </span>
-            </div>
+            <img
+              src={`${import.meta.env.BASE_URL}yuanhui.png`}
+              alt="文旅创意学院院徽"
+              className="w-[40px] h-[40px] sm:w-[48px] sm:h-[48px] md:w-[62px] md:h-[62px] object-contain shrink-0"
+            />
             <div className="hidden lg:block" style={{ width: '220px' }}>
               <h2 className="text-3xl font-bold text-heritage-primary" style={{ fontFamily: '"STXingkai", "华文行楷", "KaiTi", "楷体", serif', lineHeight: 1.1, marginLeft: '2px' }}>
                 文旅创意学院
               </h2>
-              <p className="text-heritage-secondary/70 mt-0 text-justify" style={{ fontFamily: '"Times New Roman", Times, serif', fontSize: '10.4px', letterSpacing: '0.6px', fontWeight: 700, lineHeight: 1.1, marginTop: '-3px', marginLeft: '5px' }}>
-                WEN LV CHUANG YI XUE YUAN
+              <p className="text-heritage-secondary/70 mt-0 text-justify" style={{ fontFamily: '"Times New Roman", Times, serif', fontSize: '7.5px', letterSpacing: '0px', fontWeight: 700, lineHeight: 1.1, marginTop: '-3px', marginLeft: '0.5px' }}>
+                COLLEGE OF CULTURAL TOURISM & CREATIVITY
               </p>
             </div>
           </div>

@@ -21,11 +21,15 @@ export default function DigitalHeritage() {
           </div>
 
           {/* 图片占位 */}
-          <div className="mt-8 rounded-xl overflow-hidden shadow-lg bg-gradient-to-br from-heritage-primary/20 via-heritage-secondary/20 to-heritage-gold/20 h-72 md:h-96 flex items-center justify-center border border-heritage-primary/10">
-            <div className="text-center">
-              <span className="text-7xl">🎨</span>
-              <p className="mt-3 text-heritage-primary/40 text-sm">数字非遗设计与制作 · 专业风采</p>
-            </div>
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-[6px]">
+            {['图片占位 ①', '图片占位 ②', '图片占位 ③'].map((label, i) => (
+              <div key={i} className="rounded-xl overflow-hidden shadow-lg bg-gradient-to-br from-heritage-primary/20 via-heritage-secondary/20 to-heritage-gold/20 border border-heritage-primary/10 flex items-center justify-center" style={{ aspectRatio: '4/3' }}>
+                <div className="text-center">
+                  <span className="text-4xl">🎨</span>
+                  <p className="mt-2 text-heritage-primary/40 text-xs">{label}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </main>
